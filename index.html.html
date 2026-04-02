@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Docuct Helps the Supply Chain Manager Scale Document Processing — 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#fff;color:#1a2332}
+.page{max-width:1060px;margin:0 auto;padding:52px 32px 90px;display:grid;grid-template-columns:230px 1fr;gap:56px;align-items:flex-start}
+.toc{position:sticky;top:28px;background:#fff;border-radius:12px;border:1px solid #e8ecf4;overflow:hidden}
+.toc-h{padding:14px 16px 11px;border-bottom:1px solid #e8ecf4;font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#9aaabb;display:flex;align-items:center;gap:6px}
+.na{display:flex;align-items:center;gap:9px;padding:9px 16px;text-decoration:none;color:#4a5a72;font-size:12.5px;font-weight:500;border-left:3px solid transparent;transition:all .15s;line-height:1.4}
+.na:hover{background:#f5f8ff;color:#1d4ed8}
+.na.on{border-left-color:#1d4ed8;background:#f0f4ff;color:#1d4ed8;font-weight:700}
+.article{min-width:0}
+.t-block{margin-bottom:32px}
+.t-block h1{font-size:34px;font-weight:800;color:#0d1b2a;line-height:1.2;margin-bottom:18px}
+.a-row{display:flex;align-items:center;gap:10px}
+.av{width:33px;height:33px;border-radius:50%;background:#dde6ff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#1d4ed8;flex-shrink:0}
+.a-name{font-size:13.5px;font-weight:600;color:#0d1b2a}
+.a-date{font-size:12.5px;color:#7a8a9a;margin-top:1px}
+.intro-box{font-size:14.5px;line-height:1.9;color:#2d3a4a;font-style:italic;text-align:justify;margin-bottom:28px;padding:16px 20px;border-left:3px solid #1d4ed8;background:#f8faff;border-radius:0 8px 8px 0}
+.intro-box::first-letter{font-size:56px;font-weight:800;float:left;line-height:0.82;margin-right:7px;margin-top:6px;color:#1d4ed8;font-style:normal}
+.article p{font-size:14.5px;line-height:1.88;color:#2d3a4a;text-align:justify;margin-bottom:15px}
+.article p:last-child{margin-bottom:0}
+.article p strong{color:#0d1b2a;font-weight:700}
+.article h2{font-size:22px;font-weight:800;color:#0d1b2a;margin:38px 0 14px;line-height:1.25}
+.article h3{font-size:16.5px;font-weight:700;color:#0d1b2a;margin:22px 0 10px}
+hr{border:none;border-top:1px solid #edf0f6;margin:34px 0}
+.article ul{margin:12px 0 16px;padding:0;list-style:none}
+.article ul li{font-size:14.5px;color:#2d3a4a;line-height:1.78;padding:3px 0 3px 20px;position:relative}
+.article ul li::before{content:'•';position:absolute;left:5px;color:#1d4ed8;font-weight:800}
+.article ol{margin:12px 0 16px;padding:0;list-style:none;counter-reset:nc}
+.article ol li{font-size:14.5px;color:#2d3a4a;line-height:1.78;padding:5px 0 5px 26px;position:relative;counter-increment:nc}
+.article ol li::before{content:counter(nc)'.';position:absolute;left:0;color:#1d4ed8;font-weight:700;font-size:13.5px}
+.hl-box{border-left:3px solid #10b981;background:#f0fdf8;border-radius:0 8px 8px 0;padding:15px 18px;margin:20px 0}
+.hl-label{font-size:9.5px;font-weight:700;color:#10b981;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+.hl-box p{font-size:14px;color:#0d1b2a;font-weight:500;margin:0;text-align:left;line-height:1.7}
+.tip-box{border-left:3px solid #f59e0b;background:#fffdf0;border-radius:0 8px 8px 0;padding:15px 18px;margin:20px 0}
+.tip-box p{font-size:14px;color:#0d1b2a;font-weight:500;margin:0;text-align:left;line-height:1.7}
+.docuct-box{border-left:3px solid #1d4ed8;background:#f0f4ff;border-radius:0 8px 8px 0;padding:15px 18px;margin:20px 0}
+.docuct-label{font-size:9.5px;font-weight:700;color:#1d4ed8;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+.docuct-box p{font-size:14px;color:#0d1b2a;font-weight:500;margin:0;text-align:left;line-height:1.7}
+.tbl{margin:18px 0 22px;border-radius:9px;overflow:hidden;border:1px solid #dde3ef}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+thead tr{background:#0d1b2a;color:#fff}
+th{padding:11px 14px;text-align:left;font-weight:600;font-size:12px;letter-spacing:.3px}
+td{padding:10px 14px;border-bottom:1px solid #eef1f6;color:#2d3a4a;vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#f8faff}
+td:first-child{font-weight:600;color:#0d1b2a}
+.cta{background:linear-gradient(135deg,#1a3a6e,#1565c0);border-radius:12px;padding:40px 36px;text-align:center;color:#fff;margin-top:44px}
+.cta h2{font-size:23px;font-weight:800;margin-bottom:10px}
+.cta p{color:rgba(255,255,255,.75);font-size:14.5px;margin-bottom:22px;text-align:center}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-btn-primary{background:#fff;color:#1d4ed8;border:none;padding:11px 28px;border-radius:50px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;text-decoration:none;display:inline-block}
+.cta-btn-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);padding:11px 28px;border-radius:50px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;text-decoration:none;display:inline-block}
+.cta-btn-primary:hover{background:#eff4ff;transform:translateY(-2px)}
+.cta-btn-secondary:hover{border-color:#fff;transform:translateY(-2px)}
+.sec{scroll-margin-top:28px}
+.dlink{color:#1d4ed8;font-weight:600;text-decoration:none}
+.dlink:hover{text-decoration:underline}
+@media(max-width:780px){
+  .page{grid-template-columns:1fr;padding:22px 16px 60px;gap:28px}
+  .toc{position:static}
+  .t-block h1{font-size:26px}
+  .article h2{font-size:20px}
+  .cta-btns{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="toc">
+    <div class="toc-h">CONTENTS</div>
+    <a class="na on" href="#problem"><span>⚠️</span> The Real Problem</a>
+    <a class="na" href="#ocr"><span>🔍</span> Why OCR Tools Fail</a>
+    <a class="na" href="#scale"><span>📊</span> The Scale Problem</a>
+    <a class="na" href="#what"><span>⚙️</span> What is Docuct?</a>
+    <a class="na" href="#workflow"><span>🔄</span> How Docuct Works</a>
+    <a class="na" href="#po"><span>📦</span> Purchase Order Processing</a>
+    <a class="na" href="#compliance"><span>📋</span> Vendor Compliance Docs</a>
+    <a class="na" href="#shipping"><span>🚢</span> Shipping &amp; Logistics Docs</a>
+    <a class="na" href="#multiteam"><span>👥</span> Multi-Team Workflows</a>
+    <a class="na" href="#comparison"><span>⚡</span> Before vs After Docuct</a>
+    <a class="na" href="#generic"><span>🚫</span> Generic OCR vs Docuct</a>
+    <a class="na" href="#future"><span>🔭</span> Future of Doc Automation</a>
+    <a class="na" href="#faq"><span>❓</span> FAQ</a>
+  </div>
+
+  <div class="article">
+
+    <div class="t-block">
+      <h1>How Docuct Helps the Supply Chain Manager Scale Document Processing</h1>
+      <div class="a-row">
+        <div class="av">VK</div>
+        <div>
+          <div class="a-name">Venkata Krishna Reddy</div>
+          <div class="a-date">March 17, 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-box">
+      The Supply Chain Manager is accountable for keeping goods, vendors, and logistics moving without disruption — but document processing keeps breaking that goal. Docuct combines Vision Language Models with Human-in-the-Loop validation to give supply chain teams the speed of automation with the accuracy of human review. Here is why it is becoming the tool of choice for supply chain leaders in 2026.
+    </div>
+
+    <div class="sec" id="problem">
+      <h2>The Document Bottleneck Every Supply Chain Manager Faces</h2>
+      <p>The Supply Chain Manager is responsible for keeping the entire procurement and logistics network running — vendors, purchase orders, shipments, compliance certifications, and supplier contracts. But <strong>document processing becomes a bottleneck before anyone expects it to.</strong> At scale, it becomes an operational crisis that consumes team capacity and introduces risk at every stage of the supply chain.</p>
+      <div class="hl-box">
+        <div class="hl-label">Supply Chain Reality</div>
+        <p>Document processing sits at the intersection of vendor management, procurement accuracy, logistics execution, and regulatory compliance. When it breaks down, shipments are delayed, payments are disputed, and supplier relationships are strained — across the entire supply chain, not just in one department.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="ocr">
+      <h2>Why Standard OCR Tools Are Not Enough</h2>
+      <p>Most organizations begin their document automation journey with a basic OCR tool. It extracts text from documents and passes it to downstream systems. In controlled environments — when every document follows a predictable format and image quality is consistently high — it performs adequately. But real-world supply chain documents rarely look like that.</p>
+      <p>Generic OCR solutions consistently fall short in the same ways:</p>
+      <ul>
+        <li>They extract raw text without understanding document structure or field context</li>
+        <li>They offer no confidence scoring — there is no way to know which extractions are uncertain</li>
+        <li>They provide no audit trail of what was extracted, changed, or approved</li>
+        <li>They struggle with edge cases — the exact documents that carry the highest supply chain risk</li>
+      </ul>
+      <div class="tip-box">
+        <p>⚡ <strong>The Hidden Cost:</strong> For every document error that reaches a downstream system, the correction effort is typically 5 to 10 times more expensive than catching it at source. In supply chain, that means delayed shipments, penalty charges, and strained vendor relationships.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="scale">
+      <h2>The Scale Problem That Makes This Critical</h2>
+      <p>Consider a procurement team processing 2,000 purchase orders and vendor invoices per month. Even a system claiming 95% accuracy still produces 100 errors every month. At 5,000 documents per month, that is 250 errors. At 10,000, it is 500 — across invoices, shipping docs, and compliance certificates simultaneously.</p>
+      <div class="hl-box">
+        <div class="hl-label">The Compounding Effect</div>
+        <p>Without structured validation, automation does not eliminate document errors in the supply chain — it accelerates them. The procurement team does not get faster. It gets busier correcting the mismatches and discrepancies that automation created.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="what">
+      <h2>What is Docuct?</h2>
+      <p><strong><a href="https://docuct.ai" target="_blank" class="dlink">Docuct</a></strong> is an enterprise-grade Intelligent Document Processing platform that combines <strong>Vision Language Models (VLMs)</strong> with a <strong>Human-in-the-Loop (HITL)</strong> validation workflow — purpose-built for supply chain teams that need to process documents at scale without sacrificing accuracy or governance.</p>
+      <p>Unlike standard OCR, Docuct understands documents the way an experienced reviewer does — reading layout, context, and field relationships simultaneously. It applies confidence scoring to every extracted field and routes only the fields that genuinely need human attention to a reviewer. Everything else passes through automatically.</p>
+      <div class="docuct-box">
+        <div class="docuct-label">Docuct in One Sentence</div>
+        <p>Docuct gives the Supply Chain Manager the speed of full automation with the accuracy of human review — without requiring the team to manually touch every purchase order, invoice, or shipping document. <a href="https://docuct.ai" target="_blank" class="dlink">docuct.ai</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="workflow">
+      <h2>How Docuct Works — The Full Workflow</h2>
+      <p>Here is exactly how Docuct operates in a live supply chain environment, from document ingestion to clean structured export:</p>
+      <ol>
+        <li><strong>Document ingestion at any scale.</strong> Purchase orders, vendor invoices, bills of lading, packing lists, and compliance certifications are uploaded in bulk — regardless of format, layout, or image quality.</li>
+        <li><strong>VLM-powered extraction.</strong> Layout, field context, and relationships between data points are all interpreted together — the way an experienced supply chain reviewer would read the document.</li>
+        <li><strong>Confidence scoring on every field.</strong> High-impact fields — PO numbers, quantities, unit prices, delivery dates, and HS codes — are always flagged for human review.</li>
+        <li><strong>Smart review queues.</strong> Reviewers see only the specific fields that need attention — dramatically reducing review time while maintaining complete accuracy on critical data.</li>
+        <li><strong>Structured export to downstream systems.</strong> Clean data exports directly to ERP platforms, procurement tools, and customs systems — with no manual cleanup required.</li>
+        <li><strong>Automatic audit-ready logs.</strong> Every extraction, correction, and approval is logged automatically — complete traceability for every document that passes through the system.</li>
+      </ol>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="po">
+      <h2>Use Case: Purchase Order and Vendor Invoice Processing</h2>
+      <p>Three-way matching — aligning purchase orders, vendor invoices, and goods receipts — is one of the highest-risk document workflows in supply chain. Every vendor uses a different invoice layout, different field names, and different formatting conventions. Docuct's VLM extraction handles this variability, ensuring that high-value fields are always human-verified before payment approval is triggered. Mismatches are caught before they enter the ERP system.</p>
+      <div class="docuct-box">
+        <div class="docuct-label">Operations Impact</div>
+        <p>Procurement teams using structured three-way match validation report significant reductions in payment delays, supplier escalations, and reconciliation failures — without adding headcount to the procurement team.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="compliance">
+      <h2>Use Case: Vendor Compliance and Certification Documents</h2>
+      <p>In regulated supply chains, supplier compliance documentation is not optional. The Supply Chain Manager carries direct accountability for ensuring that certification numbers, expiry dates, and issuing authority are verified before being stored or acted upon — across every supplier, every certification, and every renewal cycle. Docuct provides field-level validation, structured approval flows, and audit-ready logs — automatically, without additional documentation effort from the supply chain team.</p>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="shipping">
+      <h2>Use Case: Shipping, Logistics, and Trade Documentation</h2>
+      <p>Bills of lading, certificates of origin, customs declarations, and freight invoices all contain critical data that must be accurate before customs clearance is granted. Missing an HS code means a customs delay. Misreading a consignee address means a shipment is held at port. Docuct flags critical fields — HS codes, consignee details, and declared values — for human review before submission, catching errors before a shipment has already been held.</p>
+      <div class="docuct-box">
+        <div class="docuct-label">Logistics Impact</div>
+        <p>Logistics teams using Docuct report significant reductions in customs clearance delays, demurrage charges, and trade compliance findings — without requiring dedicated document specialists for every shipping lane.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="multiteam">
+      <h2>Use Case: Multi-Team and Multi-Supplier Document Workflows</h2>
+      <p>The Supply Chain Manager overseeing multiple procurement categories, regional teams, or supplier portfolios faces a compounding version of the document challenge. Docuct's role-based access controls and configurable validation workflows allow the Supply Chain Manager to build consistent, governed document processes across every team and every supplier — within a governance structure that the Supply Chain Manager controls.</p>
+      <div class="hl-box">
+        <div class="hl-label">Multi-Team Governance</div>
+        <p>The Supply Chain Manager maintains full visibility across all teams, suppliers, and document types from a single governance dashboard — without needing to chase individual team leads for status updates on pending approvals.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="comparison">
+      <h2>Before Docuct vs After Docuct</h2>
+      <p>Here is what document processing looks like for a supply chain team before and after implementing Docuct's Human-in-the-Loop workflow:</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Without Docuct</th><th>With Docuct</th></tr></thead>
+          <tbody>
+            <tr><td>Every PO, invoice, and shipping document reviewed manually</td><td>Only low-confidence fields reviewed — team effort focused on what requires judgment</td></tr>
+            <tr><td>Errors discovered after they reach ERP or customs systems</td><td>Errors caught at extraction stage, before they enter any downstream system</td></tr>
+            <tr><td>No confidence visibility — uncertain extractions pass through unchecked</td><td>Field-level confidence scores on every extraction — uncertainty is always visible</td></tr>
+            <tr><td>Audit trail assembled manually — incomplete and time-consuming</td><td>Audit-ready validation logs generated automatically throughout the process</td></tr>
+            <tr><td>Processing speed capped by reviewer headcount — volume creates backlogs</td><td>AI handles volume at scale — humans handle the judgment that matters</td></tr>
+            <tr><td>Compliance documentation prepared separately for each audit</td><td>Compliance-ready traceability built into every document workflow automatically</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="generic">
+      <h2>Why Generic OCR Is Not Enough for Enterprise Supply Chain Operations</h2>
+      <p>At low volumes and with standardized documents, generic OCR works. But enterprise supply chain operations do not stay at low volumes with standardized documents. The distinction becomes critical in procurement, logistics, and compliance-heavy environments where precision and traceability directly impact business outcomes.</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Criteria</th><th>Generic OCR</th><th>Docuct</th></tr></thead>
+          <tbody>
+            <tr><td>Document understanding</td><td>Raw text extraction only</td><td>Layout, context, and field relationships via VLMs</td></tr>
+            <tr><td>Confidence scoring</td><td>Not available</td><td>Field-level confidence on every extraction</td></tr>
+            <tr><td>Human review</td><td>Manual review of every document</td><td>Selective review — only low-confidence fields</td></tr>
+            <tr><td>Complex layouts</td><td>Struggles with non-standard formats</td><td>Handles variable layouts across vendors and carriers</td></tr>
+            <tr><td>Audit trail</td><td>Limited or none</td><td>Automatic, complete validation logs</td></tr>
+            <tr><td>Governance controls</td><td>Not available</td><td>Role-based access and structured approval flows</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="future">
+      <h2>The Future of Document Automation in Supply Chain</h2>
+      <p>The next phase of document automation will not be defined by full autonomy — it will be defined by intelligent collaboration between AI systems and human judgment. The Supply Chain Manager who understands this distinction will be far better positioned to build document workflows that scale reliably than one who pursues pure automation without structured oversight.</p>
+      <ul>
+        <li>AI handles high-volume, repetitive extraction — at speed, at scale, without fatigue</li>
+        <li>Humans focus on validation and decisions that carry real consequences for supplier relationships and regulatory compliance</li>
+        <li>Continuous model improvement — every human correction makes future extractions more accurate across the entire supplier and carrier document base</li>
+      </ul>
+      <div class="hl-box">
+        <div class="hl-label">The Competitive Advantage</div>
+        <p>The competitive advantage in document-intensive supply chains will belong to organizations that process procurement and logistics documents faster, more accurately, and with better governance than their peers. Docuct is the infrastructure that makes that advantage achievable.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="sec" id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>What types of supply chain documents does Docuct process?</h3>
+      <p>Purchase orders, vendor invoices, bills of lading, packing lists, certificates of origin, customs declarations, supplier compliance certifications, goods receipt notes, and freight invoices — without requiring custom templates for each vendor, carrier, or logistics partner.</p>
+
+      <h3>How does Human-in-the-Loop validation work for supply chain documents?</h3>
+      <p>Docuct assigns a confidence score to every extracted field. Only fields below the confidence threshold — or high-impact fields such as PO numbers, quantities, HS codes, and delivery dates — are routed to a reviewer. High-confidence extractions pass through automatically without consuming any reviewer time.</p>
+
+      <h3>How does Docuct handle documents from different vendors and carriers?</h3>
+      <p>Docuct's Vision Language Models understand document structure contextually — identifying field types based on position, surrounding context, and relationship to other fields on the page. New vendor and carrier formats are handled without manual template configuration.</p>
+
+      <h3>How does Docuct integrate with ERP and procurement systems?</h3>
+      <p>Docuct exports clean, structured data directly to ERP platforms, procurement tools, customs filing systems, logistics dashboards, and analytics platforms — without requiring manual cleanup or additional data transformation.</p>
+
+      <h3>Is Docuct suitable for teams with multiple procurement categories and logistics functions?</h3>
+      <p>Yes — procurement, logistics, and quality compliance teams can work within the same platform while maintaining separate workflows, validation rules, and access permissions. The Supply Chain Manager retains full visibility across all teams, document types, and supplier categories from a single governance dashboard.</p>
+    </div>
+
+    <div class="cta">
+      <h2>Ready to Eliminate Supply Chain Document Bottlenecks?</h2>
+      <p>Docuct combines AI extraction with Human-in-the-Loop validation to deliver scalable, audit-ready document processing — without adding headcount or compromising accuracy.</p>
+      <div class="cta-btns">
+        <a href="https://docuct.ai" target="_blank" class="cta-btn-primary">Start Free Trial →</a>
+        <a href="https://docuct.ai" target="_blank" class="cta-btn-secondary">Book a Demo</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const secs = document.querySelectorAll('.sec[id]');
+const nas = document.querySelectorAll('.na');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      nas.forEach(n => n.classList.remove('on'));
+      const m = document.querySelector('.na[href="#' + e.target.id + '"]');
+      if (m) m.classList.add('on');
+    }
+  });
+}, { rootMargin: '-15% 0px -75% 0px' });
+secs.forEach(s => io.observe(s));
+</script>
+</body>
+</html>
